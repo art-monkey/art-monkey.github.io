@@ -18,15 +18,21 @@
 		<link href="assets/css/toolkit-minimal.css" rel="stylesheet">
 		<link href="assets/css/application-minimal.css" rel="stylesheet">
 		<link rel="shortcut icon" type="image/png" href="assets/img/sygnet-brand.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style type="text/css">
 		
-			
+			.back-to-top {
+    		position: fixed;
+			bottom: 20px;
+			right: 20px;
+			display:none;
+				}
 			
 		</style>
 	
 	</head>
 	
-<body>
+<body id="pageTop">
 		
 	<div class="container pt-4">
 		<nav class="navbar navbar-light navbar-toggleable-sm navbar-static-top text-uppercase app-navbar mb-5">
@@ -44,22 +50,22 @@
 			<span><img style="height: 50px; margin-right: 10px;" src="assets/img/sygnet-brand.svg">Art Monkey</span>
 			</a>
 
-			<div class="collapse navbar-collapse" id="navbarResponsive">
+			<div class="collapse navbar-collapse " id="navbarResponsive">
 				<ul class="nav navbar-nav ml-auto">
-					<li class="nav-item ">
-					<a class="nav-link" href="#">Home</a>
+					<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#pageTop">Home</a>
 					</li>
-					<li class="nav-item active">
-					<a class="nav-link" href="#">Oferta</a>
+					<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#offer">Oferta</a>
 					</li>
-					<li class="nav-item ">
-					<a class="nav-link" href="#">Portfolio</a>
+					<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
 					</li>
-					<li class="nav-item ">
-					<a class="nav-link" href="#">O nas</a>
+					<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#about">O nas</a>
 					</li>
-					<li class="nav-item ">
-					<a class="nav-link" href="#">Kontakt</a>
+					<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
 					</li>
 				</ul>
 			</div><!--/.nav-collapse -->
@@ -67,13 +73,14 @@
 	</div>
 	<div class="block app-block-intro">
 		<div class="container text-xs-center">
-			<h1 class="block-title mb-0 text-uppercase">Web Design</h1>
+			<h1 class="block-title mb-0 text-uppercase"><strong>Web Design</strong></h1>
 			<h1 class="block-title mb-0 text-uppercase">Social Media</h1>
-			<h1 class="block-title mb-0 text-uppercase">Branding</h1>
+			<h1 class="block-title mb-0 text-uppercase"><strong>Branding</strong></h1>
 			<p class="lead mt-5 pb-1 text-muted">Masz pytania dotyczące naszej oferty?</p>
-			
-			<button class="btn btn-secondary btn-pill mb-3 mr-3">Pobierz cennik</button>
-			<button class="btn btn-primary btn-pill mb-3 ml-3">Napisz do nas!</button>
+			<div class="text-center">
+			<button class="btn btn-secondary btn-pill mr-3">Pobierz cennik</button>
+			<button class="btn btn-primary btn-pill ml-3">Napisz do nas!</button>
+			</div>
 			<img src="../assets/img/iphone-to-iphone-sized.jpg">
 		</div>
 	</div>
@@ -81,7 +88,7 @@
 <div class="block block-bordered-lg">
 	<div class="container">
 	  
-		<div class="row">
+		<div class="row" id="offer">
 
 			<div class="text-center mb-5">
 				<h2 class="block-title mb-3 text-uppercase"><strong>Oferta</strong></h2>
@@ -93,9 +100,9 @@
 <div class="card-deck">
 	
 	<div class="card">
-	<img class="card-img-top" src=".../100px200/" alt="Card image cap">
+	<img class="card-img-top" src="assets/img/SVG/webdev-icon.svg" alt="Web Design">
 		<div class="card-body">
-			<h5 class="card-header"><strong>Web Design</strong></h5>
+			<h5 class="card-title text-center"><strong>Web Design</strong></h5>
 			<p class="card-text">
 				<ul class="featured-list-icon-text">
 					<li>wizytówki</li>
@@ -110,10 +117,10 @@
 		</div>
 	</div>
 	
-	<div class="card">
-	<img class="card-img-top" src=".../100px200/" alt="Card image cap">
+	<div class="card">		
+	<img class="card-img-top" src="assets/img/SVG/brand-icon.svg" alt="Branding">
 		<div class="card-body">
-			<h5 class="card-header"><strong>Branding</strong></h5>
+			<h5 class="card-title text-center"><strong>Branding</strong></h5>
 			<p class="card-text">
 				<ul class="featured-list-icon-text">
 					<li>logo (+ księga znaku)</li>
@@ -133,9 +140,9 @@
 
 	</div>
 	<div class="card">
-	<img class="card-img-top" src=".../100px200/" alt="Card image cap">
+	<img class="card-img-top" src="assets/img/SVG/3d-icon.svg" alt="Projektowanie 3D">
 		<div class="card-body">
-			<h5 class="card-header"><strong>Projektowanie 3D</strong></h5>
+			<h5 class="card-title text-center"><strong>Projektowanie 3D</strong></h5>
 			<p class="card-text">
 				<ul class="featured-list-icon-text">
 					<li>wizualizacje produktów, architektury, mebli, itp.</li>
@@ -148,10 +155,11 @@
 </div>
 
 <div class="block block-bordered-lg pl-0 pr-0">
-	<div class="container">
+	<div class="container" id="portfolio">
 
 			<div class="text-center">
 				<h2 class="block-title text-uppercase"><strong>Wybrane projekty</strong></h2>
+				
 			</div>
 		</div>
 	
@@ -196,14 +204,71 @@
   </div>
 </div>
 
+<div class="block block-bordered-lg">
+	<div class="container">
 	  
+		<div class="row" id="about">
 
+			<div class="text-center mb-5">
+				<h2 class="block-title mb-3 text-uppercase"><strong>Kilka słów o nas</strong></h2>
+			  <p class="lead mx-auto">Kilkuletnie doświadczenie w pracy przy projektach o różnym przeznaczeniu i stopniu skomplikowania oraz współpraca z innymi firmami z branży pozwala nam przedstawić szeroką ofertę usług na najwyższym poziomie.</p>
+			</div>
+		</div>
+	
+
+
+		</div>
+	</div>
+
+<div class="block block-bordered-lg">
+	<div class="container">
+	  
+		<div class="row" id="contact">
+
+			<div class="text-center mb-5">
+				<h2 class="block-title mb-3 text-uppercase"><strong>Kontakt</strong></h2>
+			  <p class="lead mx-auto">Kilkuletnie doświadczenie w pracy przy projektach o różnym przeznaczeniu i stopniu skomplikowania oraz współpraca z innymi firmami z branży pozwala nam przedstawić szeroką ofertę usług na najwyższym poziomie.</p>
+			</div>
+		</div>
+	
+
+
+		</div>
+	</div>
+	  
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Kliknij, żeby wrócić do początku" data-toggle="tooltip" data-placement="left"><span class="fa fa-arrow-up"></span></a>
 		
 		
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 				
 	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery-easing/jquery.easing.min.js"></script>
+	<script src="assets/js/scrolling-nav.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body, html').animate({
+                scrollTop: 0
+            }, 800, "easeInOutExpo");
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});
+			
+		</script>
     <script src="assets/js/tether.min.js"></script>
     <script src="assets/js/toolkit.js"></script>
     <script src="assets/js/application.js"></script>
