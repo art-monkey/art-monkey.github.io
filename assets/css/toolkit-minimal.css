@@ -2194,8 +2194,8 @@ fieldset[disabled] a.btn {
     border-color: #d9534f; }
 
 .btn-link {
-  font-weight: normal;
-  color: #685D9F;
+  font-weight: 100;
+  color: #99CCCC;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link:disabled {
     background-color: transparent; }
@@ -2204,7 +2204,7 @@ fieldset[disabled] a.btn {
   .btn-link:hover {
     border-color: transparent; }
   .btn-link:focus, .btn-link:hover {
-    color: #48416f;
+    color: #8FBCB8;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link:disabled {
