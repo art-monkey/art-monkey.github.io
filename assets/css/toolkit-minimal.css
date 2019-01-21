@@ -6664,7 +6664,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 @media (max-width: 575px) {
   .hidden-xs-down {
-    display: none !important; } }
+    display: none !important; }
+	#pattern {
+    display: none !important; }}
 
 @media (min-width: 576px) {
   .hidden-sm-up {
@@ -6680,7 +6682,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 @media (max-width: 991px) {
   .hidden-md-down {
-    display: none !important; } }
+    display: none !important; }
+	#pattern {
+		margin-top: 170px;
+		width: 100%;
+	}}
 
 @media (min-width: 992px) {
   .hidden-lg-up {
@@ -8582,7 +8588,7 @@ h1.block-title {
 
 .carousel-light .carousel-indicators .active {
   background-color: #fff;
-  border: 1px solid #685D9F; }
+  border: 1px solid #99CCCC; }
 
 .callout {
   position: relative;
