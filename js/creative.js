@@ -34,10 +34,20 @@
       $("#mainNav").removeClass("navbar-scrolled");
     }
   };
+    
+    
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+    
+    // Hide navbar when modals trigger
+  $('.portfolio-modal').on('show.bs.modal', function() {
+    $('.navbar').addClass('d-none');
+  })
+  $('.portfolio-modal').on('hidden.bs.modal', function() {
+    $('.navbar').removeClass('d-none');
+  })
 
   // Magnific popup calls
   $('#portfolio').magnificPopup({
