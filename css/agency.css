@@ -157,9 +157,9 @@
     padding: 0 20px 20px;
   }
   .timeline > li .timeline-image {
-    width: 16px;
-    height: 16px;
-    margin-left: -8px;
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
   }
   .timeline > li .timeline-image h4 {
     font-size: 18px;
