@@ -77,8 +77,8 @@
   position: absolute;
   z-index: 100;
   left: 0;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin-left: 0;
   text-align: center;
   color: white;
@@ -88,6 +88,12 @@
 }
 
 .timeline > li .timeline-image h4 {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 12px;
+}
+
+.timeline > li .timeline-image-2 h4 {
   font-size: 10px;
   line-height: 14px;
   margin-top: 12px;
@@ -151,7 +157,18 @@
     height: 100px;
     margin-left: -50px;
   }
+  .timeline > li .timeline-image-2 {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
   .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+  .timeline > li .timeline-image-2 h4 {
     font-size: 13px;
     line-height: 18px;
     margin-top: 16px;
@@ -175,7 +192,17 @@
     height: 150px;
     margin-left: -75px;
   }
+  .timeline > li .timeline-image-2 {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
   .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+  .timeline > li .timeline-image-2 h4 {
     font-size: 18px;
     line-height: 26px;
     margin-top: 30px;
@@ -197,7 +224,15 @@
     height: 170px;
     margin-left: -85px;
   }
+  .timeline > li .timeline-image-2 {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
   .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+  .timeline > li .timeline-image-2 h4 {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
