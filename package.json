@@ -1,11 +1,11 @@
 {
-    "title": "Creative",
-    "name": "startbootstrap-creative",
-    "version": "5.1.4",
+    "title": "Art Monkey Creative Studio",
+    "name": "art-monkey-creative-studio",
+    "version": "2.0.0",
     "scripts": {
         "start": "gulp watch"
     },
-    "description": "Creative is a stylish one page HTML theme for Bootstrap.",
+    "description": "Projektowanie wnętrz i mebli. Fotorealistyczne wizualizacje",
     "keywords": [
         "css",
         "sass",
@@ -31,12 +31,12 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.8.1",
         "bootstrap": "4.3.1",
-        "jquery": "3.3.1",
+        "jquery": "^3.5.0",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0"
     },
     "devDependencies": {
-        "browser-sync": "2.26.3",
+        "browser-sync": "^2.29.1",
         "del": "4.0.0",
         "gulp": "4.0.0",
         "gulp-autoprefixer": "6.0.0",
@@ -44,7 +44,7 @@
         "gulp-header": "2.0.7",
         "gulp-plumber": "^1.2.1",
         "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.2",
+        "gulp-sass": "^5.1.0",
         "gulp-uglify": "3.0.2",
         "merge-stream": "^1.0.1"
     }
